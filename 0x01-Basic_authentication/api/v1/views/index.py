@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """ Module of Index views
 """
@@ -28,19 +27,18 @@ def stats() -> str:
 
 
 @app_views.route('/unauthorized', methods=['GET'], strict_slashes=False)
-def unauthorized() -> str:
+def abort_401() -> str:
     """ GET /api/v1/unauthorized
     Return:
-      - the error handler for 401 will be executed
+      - HTTP status code for a request unauthorized
     """
     abort(401)
 
 
 @app_views.route('/forbidden', methods=['GET'], strict_slashes=False)
-def forbidden() -> str:
-    """ GET /api/v1/unauthorized
+def abort_403() -> str:
+    """ GET /api/v1/forbidden
     Return:
-      - the error handler for 401 will be executed
+      - HTTP status code for a request where the user is forbidden
     """
     abort(403)
-

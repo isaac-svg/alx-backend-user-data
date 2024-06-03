@@ -1,1 +1,1 @@
-## BASIC AUTHENTICATION
+# Simple authentication API written in flask
