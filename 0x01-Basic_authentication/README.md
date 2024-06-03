@@ -1,1 +1,1 @@
-# Simple API
+## BASIC AUTHENTICATION

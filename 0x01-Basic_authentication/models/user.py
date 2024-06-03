@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """ User module
 """
@@ -57,3 +58,4 @@ class User(Base):
             return "{}".format(self.last_name)
         else:
             return "{} {}".format(self.first_name, self.last_name)
+
